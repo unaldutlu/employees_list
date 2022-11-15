@@ -1,12 +1,33 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
-
-function Buttons() {
+function Buttons({ click, count }) {
   return (
     <div>
-      <Button className="fw-bold fst-italic" variant='info' size="lg">Back</Button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <Button className="fw-bold fst-italic" variant='info' size="lg">Next</Button>
+      <p>
+        ({count}-{count + 4})
+      </p>
+      <div className="pb-4">
+        <Button
+          className='fw-bold fst-italic'
+          variant='info'
+          size='lg'
+          value='Back'
+          onClick={click}
+        >
+          Back
+        </Button>{" "}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Button
+          className='fw-bold fst-italic'
+          variant='info'
+          size='lg'
+          value='Next'
+          onClick={click}
+        >
+          Next
+        </Button>
+      </div>
     </div>
   );
 }

@@ -1,23 +1,27 @@
 import React from "react";
 import data from "../data/data";
 
-function Employees() {
+function Employees({ count }) {
   return (
     <div>
-      {data.map((item, index) => (
+      {data.slice(count-1, count+3).map((item, index) => (
         <div key={index} className='d-flex p-2 d-flex justify-content-center'>
           <div className='m-2'>
-            <img src={item.image} alt='' className='img-fluid rounded-circle bg-danger' />
+            <img
+              src={item.image}
+              alt=''
+              className='img-fluid rounded-circle bg-danger'
+            />
           </div>
           <div className='data d-flex justify-content-center align-items-start flex-column px-2'>
             <div>
-              <span className="text-info">Name:</span> {item.name}
+              <span className='text-info'>Name :</span> {item.name}
             </div>
             <div>
-              <span className="text-info">Email :</span> {item.email}
+              <span className='text-info'>Email :</span> {item.email}
             </div>
             <div>
-              <span className="text-info">Age :</span> {item.age}
+              <span className='text-info'>Age &nbsp; &nbsp;:</span> {item.age}
             </div>
           </div>
         </div>
