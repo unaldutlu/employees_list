@@ -9,9 +9,9 @@ function Buttons({ click, count }) {
       </p>
       <div className="pb-4">
         <Button
-          className='fw-bold fst-italic'
+          className='fw-bold fst-italic px-3'
           variant='info'
-          size='lg'
+          size='sm'
           value='Back'
           onClick={click}
         >
@@ -19,9 +19,9 @@ function Buttons({ click, count }) {
         </Button>{" "}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Button
-          className='fw-bold fst-italic'
+          className='fw-bold fst-italic px-3'
           variant='info'
-          size='lg'
+          size='sm'
           value='Next'
           onClick={click}
         >

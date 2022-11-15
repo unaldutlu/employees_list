@@ -20,19 +20,30 @@ img {
 }
 
 .App {
-  background: linear-gradient(126deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(193, 99, 18, 1) 38%,
-      rgba(255, 188, 0, 1) 100%)
+  background-color: rgba(193, 99, 18);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 1rem;
 }
 
 .header {
   font-family: 'Lobster', cursive;
 }
 
+p {
+  font-family: 'Lobster', cursive;
+}
+
 .frame {
-  border: 2px dashed red;
-  border-radius: 10px;
+  border: 1px solid brown;
+  border-radius: 100px;
   width: 30rem;
   margin: auto;
+  background: linear-gradient(126deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(193, 99, 18, 1) 38%,
+      rgba(255, 188, 0, 1) 100%)
 }
