@@ -5,7 +5,7 @@ function Buttons({ click, count }) {
   return (
     <div>
       <p>
-        ({count}-{count + 4})
+        ({count}-{count + 3})
       </p>
       <div className="pb-4">
         <Button
