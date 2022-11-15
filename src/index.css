@@ -25,7 +25,7 @@ img:hover {
 }
 
 .App {
-  background-color: rgb(121, 67, 20);
+  background-color: rgb(193, 99, 18);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -48,9 +48,9 @@ p {
   width: 30rem;
   margin: auto;
   background: linear-gradient(126deg,
-      rgba(2, 0, 36, 1) 5%,
+      rgba(2, 0, 36, 1) 0%,
       rgba(193, 99, 18, 1) 50%,
-      rgba(2, 0, 36, 1) 96%)
+      rgba(2, 0, 36, 1) 105%)
 
 }
 
