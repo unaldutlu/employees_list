@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 function Buttons({ click, count }) {
   return (
     <div>
-      <p>
+      <p className="text-info">
         ({count}-{count + 3})
       </p>
       <div className="pb-4">
